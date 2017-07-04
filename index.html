@@ -11,9 +11,11 @@
         <a-scene>
             <a-assets>
                 <img id="bg" src="imgs/bg.jpg">
+                <a-asset-item id="violin-obj" src="mdls/violin.obj"></a-asset-item>
             </a-assets>
             <a-sky src="#bg">
             <a-entity laser-controls="hand: left"></a-entity>
+            <a-entity obj-model="obj: #violin-obj;" position="0 0 -10" scale=".1 .1 .1" rotation="0 -90 -90"></a-entity>
         </a-scene>
     </body>
 </html>

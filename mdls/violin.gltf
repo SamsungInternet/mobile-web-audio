@@ -1,0 +1,423 @@
+{
+    "accessors": {
+        "accessors_0": {
+            "bufferView": "bufferViews_1",
+            "byteOffset": 0,
+            "byteStride": 2,
+            "componentType": 5123,
+            "count": 36,
+            "max": [
+                23
+            ],
+            "min": [
+                0
+            ],
+            "type": "SCALAR"
+        },
+        "accessors_1": {
+            "bufferView": "bufferViews_2",
+            "byteOffset": 0,
+            "byteStride": 32,
+            "componentType": 5126,
+            "count": 28314,
+            "max": [
+                26.895599365234375,
+                14.135100364685059,
+                14.13539981842041
+            ],
+            "min": [
+                -55.67649841308594,
+                0.000699999975040555,
+                -15.696000099182129
+            ],
+            "type": "VEC3"
+        },
+        "accessors_2": {
+            "bufferView": "bufferViews_3",
+            "byteOffset": 0,
+            "byteStride": 2,
+            "componentType": 5123,
+            "count": 123774,
+            "max": [
+                28313
+            ],
+            "min": [
+                0
+            ],
+            "type": "SCALAR"
+        },
+        "accessors_3": {
+            "bufferView": "bufferViews_0",
+            "byteOffset": 12,
+            "byteStride": 24,
+            "componentType": 5126,
+            "count": 24,
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "type": "VEC3"
+        },
+        "accessors_4": {
+            "bufferView": "bufferViews_2",
+            "byteOffset": 12,
+            "byteStride": 32,
+            "componentType": 5126,
+            "count": 28314,
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "type": "VEC3"
+        },
+        "accessors_5": {
+            "bufferView": "bufferViews_0",
+            "byteOffset": 0,
+            "byteStride": 24,
+            "componentType": 5126,
+            "count": 24,
+            "max": [
+                1.0000004768371582,
+                1.0000003576278687,
+                1.0
+            ],
+            "min": [
+                -1.0000003576278687,
+                -1.0000005960464478,
+                -1.0
+            ],
+            "type": "VEC3"
+        },
+        "accessors_6": {
+            "bufferView": "bufferViews_2",
+            "byteOffset": 24,
+            "byteStride": 32,
+            "componentType": 5126,
+            "count": 28314,
+            "max": [
+                0.9958999752998352,
+                0.9979999999050051
+            ],
+            "min": [
+                0.0020000000949949026,
+                0.001999974250793457
+            ],
+            "type": "VEC2"
+        }
+    },
+    "asset": {
+        "profile": {
+            "api": "WebGL",
+            "version": "1.0.3"
+        },
+        "version": "1.0"
+    },
+    "bufferViews": {
+        "bufferViews_0": {
+            "buffer": "buffers_0",
+            "byteLength": 576,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        "bufferViews_1": {
+            "buffer": "buffers_0",
+            "byteLength": 72,
+            "byteOffset": 576,
+            "target": 34963
+        },
+        "bufferViews_2": {
+            "buffer": "buffers_0",
+            "byteLength": 906048,
+            "byteOffset": 648,
+            "target": 34962
+        },
+        "bufferViews_3": {
+            "buffer": "buffers_0",
+            "byteLength": 247548,
+            "byteOffset": 906696,
+            "target": 34963
+        }
+    },
+    "buffers": {
+        "buffers_0": {
+            "byteLength": 1154244,
+            "type": "arraybuffer",
+            "uri": "buffer_combined.bin"
+        }
+    },
+    "cameras": {
+        "cameras_0": {
+            "name": "Camera",
+            "perspective": {
+                "aspectRatio": 1.703595982340029,
+                "yfov": 0.5033799409866333,
+                "zfar": 100.0,
+                "znear": 0.10000000149011612
+            },
+            "type": "perspective"
+        }
+    },
+    "extensions": {
+        "KHR_materials_common": {
+            "lights": {
+                "lights_0": {
+                    "name": "Lamp",
+                    "point": {
+                        "color": [
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "constantAttenuation": 1,
+                        "linearAttenuation": 0,
+                        "quadraticAttenuation": 0.03333335240683057
+                    },
+                    "type": "point"
+                }
+            }
+        }
+    },
+    "extensionsUsed": [
+        "KHR_materials_common"
+    ],
+    "glExtensionsUsed": [],
+    "materials": {
+        "materials_0": {
+            "extensions": {
+                "KHR_materials_common": {
+                    "technique": "PHONG",
+                    "values": {
+                        "ambient": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "diffuse": [
+                            0.64000004529953,
+                            0.64000004529953,
+                            0.64000004529953,
+                            1.0
+                        ],
+                        "doubleSided": false,
+                        "emission": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "shininess": 50,
+                        "specular": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            1.0
+                        ],
+                        "transparency": 1.0,
+                        "transparent": false
+                    }
+                }
+            },
+            "name": "Material"
+        },
+        "materials_1": {
+            "extensions": {
+                "KHR_materials_common": {
+                    "technique": "PHONG",
+                    "values": {
+                        "ambient": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "diffuse": [
+                            0.64000004529953,
+                            0.64000004529953,
+                            0.64000004529953,
+                            1.0
+                        ],
+                        "doubleSided": false,
+                        "emission": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "shininess": 50,
+                        "specular": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            1.0
+                        ],
+                        "transparency": 1.0,
+                        "transparent": false
+                    }
+                }
+            },
+            "name": "Material__26"
+        }
+    },
+    "meshes": {
+        "meshes_0": {
+            "name": "Cube",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": "accessors_3",
+                        "POSITION": "accessors_5"
+                    },
+                    "indices": "accessors_0",
+                    "material": "materials_0",
+                    "mode": 4
+                }
+            ]
+        },
+        "meshes_1": {
+            "name": "Violin",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": "accessors_4",
+                        "POSITION": "accessors_1",
+                        "TEXCOORD_0": "accessors_6"
+                    },
+                    "indices": "accessors_2",
+                    "material": "materials_1",
+                    "mode": 4
+                }
+            ]
+        }
+    },
+    "nodes": {
+        "nodes_0": {
+            "camera": "cameras_0",
+            "children": [],
+            "name": "Camera",
+            "rotation": [
+                0.483536034822464,
+                0.20870360732078552,
+                0.33687159419059753,
+                0.7804827094078064
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "translation": [
+                7.481131553649902,
+                -6.5076398849487305,
+                5.34366512298584
+            ]
+        },
+        "nodes_1": {
+            "children": [],
+            "meshes": [
+                "meshes_0"
+            ],
+            "name": "Cube",
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ]
+        },
+        "nodes_2": {
+            "children": [],
+            "extensions": {
+                "KHR_materials_common": {
+                    "light": "lights_0"
+                }
+            },
+            "name": "Lamp",
+            "rotation": [
+                0.16907575726509094,
+                0.27217137813568115,
+                0.7558802962303162,
+                0.570947527885437
+            ],
+            "scale": [
+                1.0,
+                0.9999999403953552,
+                1.0
+            ],
+            "translation": [
+                4.076245307922363,
+                1.0054539442062378,
+                5.903861999511719
+            ]
+        },
+        "nodes_3": {
+            "children": [],
+            "meshes": [
+                "meshes_1"
+            ],
+            "name": "Violin",
+            "rotation": [
+                0.7071068286895752,
+                0.0,
+                0.0,
+                0.7071067094802856
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ]
+        }
+    },
+    "samplers": {
+        "samplers_0": {}
+    },
+    "scene": "scenes_0",
+    "scenes": {
+        "scenes_0": {
+            "extras": {
+                "active_camera": "cameras_0",
+                "background_color": [
+                    0.05087608844041824,
+                    0.05087608844041824,
+                    0.05087608844041824
+                ],
+                "frames_per_second": 24
+            },
+            "name": "Scene",
+            "nodes": [
+                "nodes_3",
+                "nodes_1",
+                "nodes_2",
+                "nodes_0"
+            ]
+        }
+    }
+}
