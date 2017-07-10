@@ -13,8 +13,15 @@
                 <img id="bg" src="imgs/bg.jpg">
                 <a-asset-item id="violin-glb" src="mdls/violin.glb">
             </a-assets>
+            <a-entity camera look-controls>
+                <a-entity cursor="fuse: true; fuseTimeout: 500"
+                            position="0 0 -1"
+                            geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+                            material="color: black; shader: flat">
+                </a-entity>
+            </a-entity>
             <a-sky src="#bg" rotation="0 -90 0">
-            <a-entity laser-controls="hand: left"></a-entity>
+            <a-entity laser-controls="hand: left"></a-entity>-->
             <a-gltf-model src="#violin-glb" position="12 0 3" scale=".1 .1 .1 " rotation="0 150 -90" material="white">
                 <a-animation attribute="rotation" dur="60000" fill="backwards" from="0 0 -90" to="0 360 -90" repeat="indefinite" ease="linear"></a-animation>
             </a-gltf-model>
