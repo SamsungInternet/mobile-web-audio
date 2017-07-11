@@ -6,11 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
         <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+        <script src="/js/app.js"></script>
     </head>
     <body>
         <a-scene>
             <a-assets>
                 <img id="bg" src="imgs/bg.jpg">
+                <img id="splash" src="imgs/splash.png">
                 <a-asset-item id="violin-glb" src="mdls/violin.glb">
             </a-assets>
             <a-entity camera look-controls>
@@ -20,11 +22,9 @@
                             material="color: black; shader: flat">
                 </a-entity>
             </a-entity>
-            <a-sky src="#bg" rotation="0 -90 0">
-            <a-entity laser-controls="hand: left"></a-entity>-->
-            <a-gltf-model src="#violin-glb" position="12 0 3" scale=".1 .1 .1 " rotation="0 150 -90" material="white">
-                <a-animation attribute="rotation" dur="60000" fill="backwards" from="0 0 -90" to="0 360 -90" repeat="indefinite" ease="linear"></a-animation>
-            </a-gltf-model>
+            <a-sky src="#bg" phi-start="105">
+            <a-entity laser-controls="hand: left"></a-entity>
+            <a-image src="#splash" position="0 0 -4" rotation="0 180 0" width="1.4" height="2"></a-image>
         </a-scene>
     </body>
 </html>
