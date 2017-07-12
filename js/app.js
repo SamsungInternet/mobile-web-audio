@@ -6,7 +6,14 @@ document.addEventListener('DOMContentLoaded', function() {
     audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 
     //try to play bg sound
-    autoPlayBgSound();
+    try{
+        autoPlayBgSound();
+    }
+    catch(e)
+    {
+        alert(e);
+    }
+    
 
     _setupTag();
 
