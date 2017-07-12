@@ -12,7 +12,10 @@
         <a-scene>
             <a-assets>
                 <img id="bg" src="imgs/bg.jpg">
-                <img id="splash" src="imgs/splash.png">
+                <img id="splash" src="imgs/mnuBg.png">
+                <img id="imgMic" src="imgs/icoMic.png">
+                <img id="imgOsc" src="imgs/icoOsc.png">
+                <img id="imgTag" src="imgs/icoTag.png">
                 <a-asset-item id="violin-glb" src="mdls/violin.glb">
             </a-assets>
             <a-entity camera look-controls>
@@ -24,7 +27,10 @@
             </a-entity>
             <a-sky src="#bg" phi-start="105">
             <a-entity laser-controls="hand: left"></a-entity>
-            <a-image src="#splash" position="0 0 -4" rotation="0 180 0" width="1.4" height="2"></a-image>
+            <a-image src="#splash" position="0 0 -4" rotation="0 180 0" width="4" height="2.5" id="uiSplash"></a-image>
+            <a-image src="#imgTag" position="1 0 -3" rotation="0 180 0" width=".7" height=".7" id="btnTag"></a-image>
+            <a-image src="#imgMic" position="0 0 -3" rotation="0 180 0" width=".7" height=".7" id="btnMic"></a-image>
+            <a-image src="#imgOsc" position="-1 0 -3" rotation="0 180 0" width=".7" height=".7" id="btnOsc"></a-image>
         </a-scene>
     </body>
 </html>
