@@ -50,7 +50,7 @@ var playTag = function(){
 };
 
 var playOsc = function(){
-    //crate, configure and play oscillator
+    //create, configure and play oscillator
     osc = audioCtx.createOscillator();
     osc.frequency.value = 150;
     osc.type = "triangle";
