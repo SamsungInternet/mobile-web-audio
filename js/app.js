@@ -1,6 +1,7 @@
 var audioCtx = null;
 var tag = null;
 var osc = null;
+var mic = null;
 
 document.addEventListener('DOMContentLoaded', function() {
     audioCtx = new (window.AudioContext || window.webkitAudioContext)();
@@ -11,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     catch(e)
     {
-        alert(e);
+        console.log('cant play bg sound' + e.message);
     }
     
 
@@ -23,13 +24,16 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     document.getElementById('btnMic').addEventListener('click', function(){
-        console.log('Mic');
+        console.log('playing stream microphone');
+        playMic();
     });
 
     document.getElementById('btnOsc').addEventListener('click', function(){
         console.log('playing ocsillator');
         playOsc();
     });
+
+    
 });
 
 var _setupTag = function(){
@@ -67,4 +71,18 @@ var autoPlayBgSound = function(){
     src.connect(gainNode);
     gainNode.connect(audioCtx.destination);
     bgSound.play();
+};
+
+var playMic = function(){
+    //get microphone stream  
+    var mediaconstraints = {audio:true}; //defines media device constraints     
+    navigator.mediaDevices.getUserMedia(mediaconstraints).then(function(mediaStream){ 
+        //create audio nodes 
+        source = audioCtx.createMediaStreamSource(mediaStream); 
+        gainNode = audioCtx.createGain(); 
+        gainNode.gain.value = .8; 
+        //connect nodes 
+        source.connect(gainNode); 
+        gainNode.connect(audioCtx.destination); 
+    }).catch(function(err){console.log(err);});  
 };
